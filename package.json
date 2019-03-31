@@ -7,7 +7,7 @@
   "main": "dist/bundle.js",
   "scripts": {
     "build:prod": "rollup -c --environment BUILD:production",
-    "build:dev": "rollup -c --environment BUILD:development",
+    "build:dev": "rollup -c --environment BUILD:development --watch",
     "test": "jest",
     "test:coverage": "jest --coverage --forceExit --colors"
   },
@@ -34,6 +34,7 @@
     "babel-jest": "^24.5.0",
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.6.0",
     "husky": "^1.3.1",
     "jest": "^24.5.0",
     "kind-of": "^6.0.2",
@@ -46,6 +47,7 @@
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-babel-minify": "^8.0.0",
     "rollup-plugin-commonjs": "^9.2.2",
+    "rollup-plugin-eslint": "^5.1.0",
     "rollup-plugin-node-resolve": "^4.0.1",
     "rollup-plugin-peer-deps-external": "^2.2.0"
   },

@@ -18,7 +18,7 @@ Depends on React Hooks which are available as of react version 16.8.0 and higher
 // index.js
 
 import React from 'react';
-import { Provider } from 'usestore';
+import { Provider } from 'use-hooks-store';
 import reducer from '../../state/reducer';
 import AddTodo from './AddTodo';
 import TodoList from './TodoList';
@@ -41,7 +41,7 @@ export default TodoApp;
 import React from 'react';
 
 import useForm from '../useForm';
-import { useStore } from 'usestore';
+import { useStore } from 'use-hooks-store';
 import { addTodo } from '../../state/actions';
 
 const AddTodo = () => {
@@ -82,7 +82,7 @@ export default AddTodo;
 
 import React from 'react';
 
-import { useStore } from 'usestore';
+import { useStore } from 'use-hooks-store';
 import { deleteTodo } from '../../state/actions';
 
 const TodoList = () => {
