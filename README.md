@@ -6,10 +6,10 @@ Depends on React Hooks which are available as of react version 16.8.0 and higher
 ## Installation
 ```js
     #Yarn
-    yarn add usestroe
+    yarn add use-hooks-stroe
 
     # npm
-    npm install --save usestore
+    npm install --save use-hooks-store
 ```
 
 ## Usage
