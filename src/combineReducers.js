@@ -6,7 +6,8 @@ export const combineReducers = reducers => {
     let resultedState = {};
 
     Object.keys(reducers).forEach(key => {
-      resultedState[key] = reducers[key](state, action);
+      const prevState = state ? state[key] : undefined;
+      resultedState[key] = reducers[key](prevState, action);
     });
 
     return resultedState;
