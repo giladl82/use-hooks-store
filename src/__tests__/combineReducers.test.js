@@ -34,7 +34,10 @@ describe('store', () => {
         rd2
       });
 
-      const state = {};
+      const state = {
+        rd1: {},
+        rd2: {}
+      };
       const action = 'TEST';
 
       expect(typeof reducers).toBe('function');
@@ -42,9 +45,9 @@ describe('store', () => {
       reducers(state, action);
 
       expect(rd1).toHaveBeenCalledTimes(1);
-      expect(rd1).toHaveBeenCalledWith(state, action);
+      expect(rd1).toHaveBeenCalledWith({}, action);
       expect(rd2).toHaveBeenCalledTimes(1);
-      expect(rd2).toHaveBeenCalledWith(state, action);
+      expect(rd2).toHaveBeenCalledWith({}, action);
     });
   });
 });
