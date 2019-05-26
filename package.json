@@ -2,7 +2,7 @@
   "name": "use-hooks-store",
   "displayName": "use-hooks-store",
   "homepage": "https://github.com/giladl82/use-hooks-store",
-  "version": "0.1.5",
+  "version": "1.0.1",
   "description": "React hooks global state manager",
   "main": "dist/bundle.js",
   "scripts": {
